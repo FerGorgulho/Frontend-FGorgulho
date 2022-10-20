@@ -1,0 +1,95 @@
+{
+    "experience":[
+        {
+            "id": 1,
+            "name": "Sport Technology Liaison Person Junior",
+            "where": "Juegos Olímpicos de la Juventud Buenos Aires",
+            "period": "2018",
+            "description": "Conección entre Atos, Omega y Federaciones. Responsable por revisar y garantizar la calidad de todos los aspectos relacionados a los resultados y puntuaciones en los Juegos Olímpicos de la Juventud 2018. Monitorización de sistemas (WRS, RMA, CIS, Data Feed Viewer). Seguimiento de políticas y procesimientos. Producción del libro de resultados. Facilitadora de la comunicación con el idioma local.",
+            "logo": "assets/img/logo-yog-2018.png"
+        },
+        {
+            "id": 2,
+            "name": "Web developer",
+            "where": "Trabajo final del programa Codo a Codo 4.0",
+            "period": "2021",
+            "description": "Página web fullstack desarrollada y finalizada durante un cuatrimestre del programa del Gobierno de la Ciudad de Buenos Aires, Codo a Codo 4.0: https://www.serviciosfernando.com.ar",
+            "logo": "assets/img/logo-servicios-fernando.png"
+        }
+    ],
+    "education":[
+        {
+            "id": 1,
+            "name": "Licenciada en Educación Física",
+            "institution": "UNICAMP - Universidade Estadual de Campinas (Brasil)",
+            "period": "2010-2015",
+            "description": "La docencia con bases sólidas para pensar y dialogar cientificamente de manera interdisciplinar. Permite la sistematización del ejercício físico a partir de grandes temas de la cultura (juegos, gimnasias, luchas, danzas y el deporte).",
+            "logo": "/assets/img/logo-unicamp.png"
+        },
+        {
+            "id": 2,
+            "name": "Cursos de HTML, CSS y JavaScript",
+            "institution": "Udemy",
+            "period": "2020",
+            "description": "Cursos en linea de HTML, CSS y JavaScript desde el cero",
+            "logo": "/assets/img/logo-udemy.png"
+        },
+        {
+            "id": 3,
+            "name": "FullStack Developer en Python",
+            "institution": "Programa Codo a Codo 4.0",
+            "period": "2021",
+            "description": "Aprendemos a desarrollar un sitio web sumergiéndote en las mejores prácticas del diseño web responsive, trabajando con HTML, CSS y Javascript. Trabajamos con bases de datos con la capacidad de diseñar aplicaciones web robustas, dinámicas y escalables.",
+            "logo": "/assets/img/logo-codo-a-codo.png"
+        },
+        {
+            "id": 4,
+            "name": "Sé Programar",
+            "institution": "Argentina Programa",
+            "period": "2021",
+            "description": "Primera etapa del programa de la Nación Argentina 'Argentina Programa'. Curso introductorio para aprender fundamentos básicos de la programació y adentrarse al mundo tecnológico.",
+            "logo": "/assets/img/logo-argentina-programa.png"
+        },
+        {
+            "id": 5,
+            "name": "Yo progamo",
+            "institution": "Argentina Programa",
+            "period": "2022-actual",
+            "description": "Segunda etapa del programa de la Nación Argentina 'Argentina Programa'. Aprender los conceptos, tecnologías y herramientas necesarios como finalidad de tener un perfil FullStack.",
+            "logo": "/assets/img/logo-argentina-programa.png"
+        }
+    ],
+    "projects":[
+        { "id": 1,
+            "name": "Servicios Fernando",
+            "period": "2021-2022",
+            "description": "Página web sobre arreglo generales, realizado con HTML, CSS y JavaScript.",
+            "projIma": "/assets/img/project-servicios-fernando.png",
+            "projLink": "https://www.serviciosfernando.com.ar"
+        },
+        {
+            "id": 2,
+            "name": "Spotify Clone",
+            "period": "2022",
+            "description": "Clone de Spotify, realizado con HTML y CSS.",
+            "projIma": "/assets/img/project-spotify-clone.png",
+            "projLink": "https://github.com/FerGorgulho/spotifyclone2020.git"
+        },
+        {
+            "id": 3,
+            "name": "Tinder Clone",
+            "period": "2022",
+            "description": "Clone estático de Tinder, realizado con HTML y CSS. Responsivo para mobile y desktop.",
+            "projIma": "/assets/img/project-tinder-clone.png",
+            "projLink": "https://github.com/FerGorgulho/tinderclone.git"
+        },
+        {
+            "id": 4,
+            "name": "Tic Tac Toe",
+            "period": "2022",
+            "description": "Juego de TaTeTi usando HTML, CSS y JavaScript",
+            "projIma":"/assets/img/project-tictactoe.png",
+            "projLink": "https://github.com/FerGorgulho/tictactoe.git"
+        }
+    ]
+}

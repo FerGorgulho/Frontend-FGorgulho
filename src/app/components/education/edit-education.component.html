@@ -1,0 +1,24 @@
+<div class="container-new-education" *ngIf="educac">
+    <form class="form-new-education" (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="form-group">
+            <label for="nombreEc">Nombre del puesto</label>
+            <input type="text" class="form-control" id="nombreEc" name="nombreEc" [(ngModel)]="educac.nombreEc" required>
+
+            <label for="institucionEc">Nombre de la institución</label>
+            <input type="text" class="form-control" id="institucionEc" name="institucionEc" [(ngModel)]="educac.institucionEc" required>
+
+            <label for="periodoEc">Duración de la cursada</label>
+            <input type="text" class="form-control" id="periodoEc" name="periodoEc" [(ngModel)]="educac.periodoEc" required>
+            
+            <label for="descripcionEc">Descripción del curso/carrera</label>
+            <input type="text" class="form-control" id="descripcionEc" name="descripcionEc" [(ngModel)]="educac.descripcionEc" required>
+
+            <label for="logoEc">Logo de la institución</label>
+            <input type="file" class="form-control" id="logoEc" name="logoEc" [(ngModel)]="educac.logoEc" required>
+        </div>
+        <button class="btn btn-dark">
+            Actualizar 
+        </button>
+    </form>
+    
+</div>

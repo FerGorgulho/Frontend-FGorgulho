@@ -1,0 +1,37 @@
+<!--================== Header =====================-->
+
+<header id="header-container">
+    <nav class="navbar navbar-expand-lg">
+  <!---------- Header left ---------------->
+        <div class="header-left">
+            <img src="assets/img/logo-argentina-programa.png" alt="logo-argentina-programa" class="logo-argentina-programa">
+            <h1 class="name-argentina-programa navbar-text">
+              "Argentina Programa" #YoProgramo
+            </h1>
+        </div>
+  
+  <!----------- Header right -------------->
+        <div class="header-right">
+            <div class="social-medias">
+            <ul class="list-social">
+                <li class="nav-link">
+                    <a href="https://www.linkedin.com/in/fernanda-gorgulho-0b44a0174/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://www.github.com/FerGorgulho" target="_blank"><i class="fa fa-github"></i></a>
+                </li>
+                <li class="nav-link">
+                    <a href="https://www.instagram.com/feergorgulho/" target="_blank"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+            </div>
+  
+            <div class="login-container">
+                <button class="login btn btn-outline-dark" (click)="login()" *ngIf="!isLogged" >Login</button>
+                <button class="login btn btn-outline-dark" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
+            </div>
+        </div>
+    </nav>
+  </header>
+  
+  <!--================== End Header =====================-->

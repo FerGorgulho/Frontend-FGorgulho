@@ -1,0 +1,16 @@
+<div class="container-new-aboutme">
+
+    <form class="form-new-aboutme" (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div class="form-group">
+            <label for="descripcionA">Contanos sobre vos</label>
+            <input type="text" class="form-control" id="descripcionA" name="descripcionA" [(ngModel)]="descripcionA" required>
+
+            <label for="imgA">Subi una foto tuya</label>
+            <input type="file" class="form-control" id="imgA" name="imgA" [(ngModel)]="imgA" required>
+        </div>
+        <button class="btn btn-dark">
+            Agregar tu descripción
+        </button>
+    </form>
+    
+</div>

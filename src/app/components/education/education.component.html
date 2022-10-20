@@ -1,0 +1,33 @@
+<!--================== Education Section =====================-->
+<div id="education-container">
+    <h2 class="education-items">Educación</h2>
+    
+    <button type="button" class="plus-edition edition" routerLink="/nuevaeduc" *ngIf="isLogged">
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="education-item" *ngFor="let Educacion of educ">
+        <div class="logoplustitle-educacion">
+            <img src="{{Educacion.logoEc}}" alt="" class="logo logo-education">
+            <div class="title-education-item">
+                <h3 class="education-name">{{Educacion.nombreEc}}</h3>
+                <h4 class="education-institution">{{Educacion.institucionEc}}</h4>
+                <p class="education-period">{{Educacion.periodoEc}}</p>
+            </div>
+        </div>
+        <p class="education-description">{{Educacion.descripcionEc}}</p>
+        
+        <div class="buttons-edition" *ngIf="isLogged">
+            <button type="button" class="education-edition edition" routerLink="/editeduc/{{Educacion.id}}">
+                <i class="fas fa-pen"></i>
+            </button>
+            <button type="button" class="education-edition-remove remove-edition" (click)="delete(Educacion.id)">
+                <i class="fa fa-trash"></i>
+            </button>
+        </div>
+    </div>
+
+    <!--================== End Education Section =====================-->
+
+
+    

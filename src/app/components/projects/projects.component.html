@@ -1,0 +1,34 @@
+<!--================== Projects Section =====================-->
+<div id="projects-container">
+    <h2 class="projects-title">Proyectos</h2>
+    
+    <button type="button" class="plus-edition edition" routerLink="/nuevoproj" *ngIf="isLogged">
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="projects-items" *ngFor="let Proyectos of proj">
+        <div class="projects-item">
+            <h3 class="projects-name">{{Proyectos.nombreP}}</h3>
+            <p class="projects-period">{{Proyectos.periodoP}}</p>
+            <p class="projects-description">{{Proyectos.descripcionP}}</p>
+            <a href="" target="_blank" class="projects-img-container">
+            <img src="" alt="" class="projects-img">
+            </a>
+            <a href="{{Proyectos.projLinkP}}" target="_blank" class="projects-img-container">
+            <img src="{{Proyectos.projImaP}}" alt="" class="projects-img">
+            </a>
+        </div>
+        
+            <div class="buttons-edition" *ngIf="isLogged">
+                <button type="button" class="project-edition edition" routerLink="/proyecto/{{Proyectos.id}}">
+                    <i class="fas fa-pen"></i>
+                </button>
+                <button type="button" class="project-edition-remove remove-edition" (click)="delete(Proyectos.id)">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </div>
+    </div>
+    
+</div>
+<!--================== End Projects Section =====================-->
+

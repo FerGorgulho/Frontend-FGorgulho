@@ -1,0 +1,30 @@
+<!--================== Experience Section =====================-->
+<div id="experience-container">
+    <h2 class="experience-items">Experiencia</h2>
+    
+    <button type="button" class="plus-edition edition" routerLink="/nuevaexp" *ngIf="isLogged">
+        <i class="fas fa-plus"></i>
+    </button>
+    
+    <div class="experience-item" *ngFor="let Experiencia of expe">
+        <div class="logoplustitle-experience">
+            <img src="{{Experiencia.logoE}}" alt="" class="logo">
+            <div class="title-experience-item">
+                <h3 class="experience-name">{{Experiencia.nombreE}}</h3>
+                <h4 class="experience-name-where">{{Experiencia.dondeE}}</h4>
+                <p class="expecience-period">{{Experiencia.periodoE}}</p>
+            </div>
+        </div>
+        <p class="experience-descripcion">{{Experiencia.descripcionE}}</p>
+
+        <div class="buttons-edition" *ngIf="isLogged">
+            <button type="button" class="experience-edition edition" routerLink="/editexp/{{Experiencia.id}}">
+                <i class="fas fa-pen"></i>
+            </button>
+            <button type="button" class="experience-edition-remove remove-edition" (click)="delete(Experiencia.id)">
+                <i class="fa fa-trash"></i>
+            </button>
+        </div>
+    </div>
+
+<!--================== End Experience Section =====================-->

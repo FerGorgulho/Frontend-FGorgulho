@@ -1,0 +1,25 @@
+<!--================== About Me Section =====================-->  
+<div id="about-container">
+
+    <div class="photo">
+        <img src="assets/img/photo.jpg" alt="me" class="personal-photo">       
+    </div>
+
+    <div class="about-description" *ngFor="let AboutMe of about">
+        <p class="about">"Soy una persona apasionada por las tecnologias, la educación y el deporte. Busco desarrollarme profesionalmente en el área de la tecnología y estoy dispuesta a seguir aprendiendo. Soy dedicada y me adapto a las exigencias en diferentes situaciones del trabajo. También demuestro ser práctica y trabajar en equipo de manera eficaz."</p>       
+    </div>
+
+    <div class="buttons-edition" *ngIf="isLogged">
+        <button type="button" class="about-edition edition" >
+            <i class="fas fa-pen"></i>
+        </button>
+        <button type="button" class="about-edition-remove remove-edition" >
+            <i class="fa fa-trash"></i>
+        </button>
+    </div>
+
+</div>
+
+ 
+
+<!--================== End About Me Section =====================-->
